@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarkt des Wahnsinns</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>Supermarkt des Wahnsinns</h1>
+    <article>
+        <section>
+<form id="supermarketForm">
+    <div class="flex">
+        <label for="name">Kundenname:</label>
+        <input id="name" type="text" name="name" placeholder="Name eingeben">
+    </div>
+
+    <div class="flex">
+        <label for="age">Alter:</label>
+        <input id="age" type="number" name="age" placeholder="Alter eingeben">
+        <!--<input id="age" type="number" name="age" required title="Bitte geben Sie Ihr Alter ein">-->
+    </div>
+
+    <div class="flex">
+        <label for="apples">Anzahl der Äpfel (0,50€ pro Stück):</label>
+        <input id="apples" type="number" name="apples" placeholder="0">
+    </div>
+
+    <div class="flex">
+        <label for="potatoes">Kartoffeln (kg, 1,20€ pro kg):</label>
+        <input id="potatoes" type="number" name="potatoes" step="0.1" placeholder="0">
+    </div>
+
+    <div class="flex">
+        <label for="chocolates">Schokoriegel (jeder dritte kostenlos):</label>
+        <input id="chocolates" type="number" name="chocolates" placeholder="0">
+    </div>
+
+    <div class="flex">
+        <label for="eggs">Überraschungseier:</label>
+        <input id="eggs" type="number" name="eggs" placeholder="0">
+    </div>
+
+    <label class="flex">
+        <input id="luckyDiscount" type="checkbox" name="luckyDiscount">
+        Glückszahl-Rabatt (10% Rabatt, wenn Summe durch 7 teilbar)
+    </label>
+
+    <button type="button" id="calculateButton">Berechnen</button>
+</form>
+        </section>
+        <section>
+<h2>Ergebnis:</h2>
+<div id="result"></div>
+<div id="totalCost"></div>
+        </section>
+    </article>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
