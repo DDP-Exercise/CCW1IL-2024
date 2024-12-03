@@ -24,7 +24,7 @@ document.getElementById('calculateButton').addEventListener('click', function ()
     // Grundaufgabe: Preise berechnen
     const appleCost = apples * 0.5;
     let potatoCost = potatoes * 1.2;
-    const chocolateCost = (chocolates - Math.floor(chocolates / 3)) * 0.8; // Jeder dritte gratis
+    const chocolateCost = (chocolates - Math.floor(chocolates / 3)) * 1.2; // Jeder dritte gratis
     const eggDozens = Math.floor(eggs / 12);
     const singleEggs = eggs % 12;
     const eggCost = eggDozens * 2.5 + singleEggs * 0.25;
