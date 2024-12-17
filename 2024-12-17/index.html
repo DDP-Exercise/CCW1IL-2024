@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wetter Spielerei</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="customStyle.css">
+</head>
+<body>
+<h1>Wetter Spielerei</h1>
+<form id="weatherForm">
+    <div class="flex">
+        <label for="weather">Wetter:</label>
+        <select id="weather">
+            <option value="sunny">Sonnig</option>
+            <option value="rainy">Regnerisch</option>
+            <option value="snowy">Schneefall</option>
+        </select>
+    </div>
+    <div class="flex">
+        <label for="temperature">Temperatur:</label>
+        <input type="range" id="temperature" min="-10" max="40" value="20">
+        <span id="tempValue">20°C</span>
+    </div>
+    <div class="flex">
+        <button type="button" id="generateWeather">Wetter anzeigen</button>
+    </div>
+</form>
+<div id="weatherDisplay"></div>
+<script src="weather.js"></script>
+</body>
+</html>
