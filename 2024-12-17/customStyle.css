@@ -26,6 +26,7 @@ body {
 #weatherDisplay {
     min-height: 75vh;
     position: relative;
+    overflow: hidden;
 }
 #sun {
     background-color: yellow;

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Bestellung</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+
+<main class="container">
+    <h1>Pizzabestellung</h1>
+    <div class="flex">
+        <label for="pizza">Wähle eine Pizza</label>
+        <select id="pizza">
+            <option disabled selected>Auswahl treffen</option>
+        </select>
+    </div>
+    <div class="flex">
+        <label for="size">Wähle eine Größe </label>
+        <select id="size">
+            <option disabled selected>Auswahl treffen</option>
+        </select>
+    </div>
+    <button id="order">Bestellung abschicken</button>
+    <div id="output"></div>
+</main>
+
+<script src="logic.js"></script>
+</body>
+</html>
